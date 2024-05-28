@@ -17,13 +17,13 @@ class BamaCar(Bama):
             if self.json_response["status"] is True:
                 if "metadata" in self.json_response:
                     metadata_df = pd.json_normalize(self.json_response["metadata"])
-                    print(metadata_df)
+                    # print(metadata_df)
                 else:
                     raise Exception(f'metadata not found in response in {self.url}')
 
                 if "data" in self.json_response:
                     data_df = pd.json_normalize(self.json_response["data"], record_path='ads')
-                    print(data_df)
+                    # print(data_df)
                 else:
                     raise Exception(f'data not found in response in {self.url}')
 
