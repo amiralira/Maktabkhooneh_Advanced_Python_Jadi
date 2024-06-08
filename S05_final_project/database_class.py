@@ -6,7 +6,7 @@ from mysql.connector import connect, Error
 
 class DataBase:
     user_name = "root"
-    password = "Amirali-55662282"
+    password = "1234"
     host = "localhost"
     port = "3306"
     database_name = "Maktabkhooneh_advanced_python_final_project"
